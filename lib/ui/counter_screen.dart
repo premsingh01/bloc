@@ -36,7 +36,7 @@ class CounterScreen extends StatelessWidget {
               SizedBox(width: 20),
               ElevatedButton(onPressed: () {
                 context.read<CounterBloc>().add(DecrementCounter());
-              }, child: const Text("Decreement")),
+              }, child: const Text("Decrement")),
             ],
           ),
         ],

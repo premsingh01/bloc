@@ -10,5 +10,5 @@ class CounterState extends Equatable {
   }
 
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [counter];
 }
