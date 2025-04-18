@@ -1,4 +1,5 @@
 import 'package:bloc_study/ui/counter_screen.dart';
+import 'package:bloc_study/ui/image_picker_screen.dart';
 import 'package:bloc_study/ui/switch_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +29,15 @@ class Dashboard extends StatelessWidget {
                 ).push(MaterialPageRoute(builder: (_) => SwitchScreen()));
               },
               child: const Text("Switch Example"),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(
+                  context,
+                ).push(MaterialPageRoute(builder: (_) => ImagePickerScreen()));
+              },
+              child: const Text("Image Picker"),
             ),
             const SizedBox(height: 16),
           ],
