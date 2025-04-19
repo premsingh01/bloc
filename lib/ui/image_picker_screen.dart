@@ -29,13 +29,13 @@ class ImagePickerScreen extends StatelessWidget {
                         onTap: () {
                           context.read<ImagePickerBloc>().add(CameraPicker());
                         },
-                        child: CircleAvatar(child: Icon(Icons.camera)),
+                        child: const CircleAvatar(child: Icon(Icons.camera)),
                       ),
                       InkWell(
                         onTap: () {
                           context.read<ImagePickerBloc>().add(GalleryImagePicker());
                         },
-                        child: CircleAvatar(child: Icon(Icons.browse_gallery)),
+                        child: const CircleAvatar(child: Icon(Icons.browse_gallery)),
                       ),
                         ],
                       ),
