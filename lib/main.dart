@@ -24,9 +24,6 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (context) => CounterBloc(),
         ),
-        BlocProvider(
-          create: (context) => ImagePickerBloc(ImagePickerUtils()),
-        )
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
