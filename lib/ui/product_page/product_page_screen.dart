@@ -35,7 +35,7 @@ class ProductPageScreen extends StatelessWidget {
                         ),
                       );
                     case ProductPageLoadingState():
-                      return Center(child: CircularProgressIndicator());
+                      return Center(child: const CircularProgressIndicator());
                     case ProductPageCompletedState():
                       return ListView.separated(
                         separatorBuilder:
@@ -102,7 +102,13 @@ class ProductPageScreen extends StatelessWidget {
                         },
                       );
                     case ProductPageFailureState():
-                      return const Text("Something went wrong");
+                      return ListView(
+                        children: [
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height,
+                            child: Center(child: Text(state.error.toString()))),
+                        ],
+                      );
                   }
                 },
               ),

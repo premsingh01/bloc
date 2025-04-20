@@ -17,11 +17,19 @@ class ProductPageCompletedState extends ProductPageState {
   const ProductPageCompletedState({this.productList = const []});
 
   ProductPageCompletedState copyWith({List<ProductPageModel>? productList}) {
-    return ProductPageCompletedState(productList: productList ?? this.productList);
+    return ProductPageCompletedState(
+      productList: productList ?? this.productList,
+    );
   }
 
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [productList];
 }
 
-class ProductPageFailureState extends ProductPageState {}
+class ProductPageFailureState extends ProductPageState {
+  final String error;
+  const ProductPageFailureState({required this.error});
+
+  @override
+  List<Object?> get props => [error];
+}
