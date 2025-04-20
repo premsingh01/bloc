@@ -10,11 +10,11 @@ class ToDoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => ToDoBloc(),
+      create: (_) => ToDoBloc(),
       child: Builder(
         builder: (context) {
           return Scaffold(
-            appBar: AppBar(title: const Text("TO Do App")),
+            appBar: AppBar(title: const Text("Todo App")),
             body: BlocBuilder<ToDoBloc, ToDoState>(
               builder: (context, state) {
                 if (state.toDoList.isEmpty) {

@@ -1,5 +1,4 @@
 import 'package:bloc_study/bloc/counter/counter_bloc.dart';
-import 'package:bloc_study/bloc/image_picker/image_picker_bloc.dart';
 import 'package:bloc_study/bloc/switch/switch_bloc.dart';
 import 'package:bloc_study/ui/dashboard.dart';
 import 'package:flutter/material.dart';

@@ -1,4 +1,5 @@
 import 'package:bloc_study/ui/counter/counter_screen.dart';
+import 'package:bloc_study/ui/favourite_app/favourite_app_screen.dart';
 import 'package:bloc_study/ui/image_picker/image_picker_screen.dart';
 import 'package:bloc_study/ui/switch/switch_screen.dart';
 import 'package:bloc_study/ui/to_do/to_do_screen.dart';
@@ -47,7 +48,16 @@ class Dashboard extends StatelessWidget {
                   context,
                 ).push(MaterialPageRoute(builder: (_) => ToDoScreen()));
               },
-              child: const Text("To Do App"),
+              child: const Text("Todo App"),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(
+                  context,
+                ).push(MaterialPageRoute(builder: (_) => FavouriteAppScreen()));
+              },
+              child: const Text("Favourite App"),
             ),
             const SizedBox(height: 16),
           ],
