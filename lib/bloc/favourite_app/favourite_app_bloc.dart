@@ -1,7 +1,7 @@
 import 'package:bloc_study/bloc/favourite_app/favourite_app_event.dart';
 import 'package:bloc_study/bloc/favourite_app/favourite_app_state.dart';
 import 'package:bloc_study/model/favourite_app/favourite_item_model.dart';
-import 'package:bloc_study/repository/favourite_app_repository.dart';
+import 'package:bloc_study/repository/favourite_app/favourite_app_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class FavouriteAppBloc extends Bloc<FavouriteAppEvent, FavouriteAppState> {

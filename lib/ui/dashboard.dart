@@ -1,6 +1,7 @@
 import 'package:bloc_study/ui/counter/counter_screen.dart';
 import 'package:bloc_study/ui/favourite_app/favourite_app_screen.dart';
 import 'package:bloc_study/ui/image_picker/image_picker_screen.dart';
+import 'package:bloc_study/ui/product_page/product_page_screen.dart';
 import 'package:bloc_study/ui/switch/switch_screen.dart';
 import 'package:bloc_study/ui/to_do/to_do_screen.dart';
 import 'package:flutter/material.dart';
@@ -58,6 +59,15 @@ class Dashboard extends StatelessWidget {
                 ).push(MaterialPageRoute(builder: (_) => FavouriteAppScreen()));
               },
               child: const Text("Favourite App"),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(
+                  context,
+                ).push(MaterialPageRoute(builder: (_) => ProductPageScreen()));
+              },
+              child: const Text("Product Page(API)"),
             ),
             const SizedBox(height: 16),
           ],
